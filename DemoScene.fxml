@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane fx:id="backgroundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+<Pane fx:id="backgroundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="514.0" style="-fx-background-color: #CEE3F6; -fx-border-color: #58D3F7;" xmlns="http://javafx.com/javafx/8.0.66" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
 
    <children>
 
-      <Button fx:id="yesButton" layoutX="404.0" layoutY="444.0" onMouseClicked="#yesClicked" prefHeight="52.0" prefWidth="151.0" text="Yes" />
+      <Button fx:id="yesButton" layoutX="348.0" layoutY="15.0" onMouseClicked="#yesClicked" prefHeight="52.0" prefWidth="151.0" style="-fx-background-color: #F5A9F2; -fx-border-color: #F781F3;" text="YES" textFill="#870f74">
+         <font>
+            <Font name="Leelawadee" size="14.0" />
+         </font></Button>
 
-      <Button fx:id="noButton" layoutX="582.0" layoutY="444.0" onMouseClicked="#noClicked" prefHeight="52.0" prefWidth="151.0" text="No" />
+      <Button fx:id="noButton" layoutX="348.0" layoutY="96.0" onMouseClicked="#noClicked" prefHeight="52.0" prefWidth="151.0" style="-fx-background-color: #F5A9F2; -fx-border-color: #F781F3;" text="NO" textFill="#8c1c71">
+         <font>
+            <Font name="Leelawadee" size="14.0" />
+         </font></Button>
 
-      <Button fx:id="exitButton" layoutX="582.0" layoutY="22.0" onMouseClicked="#exitClicked" prefHeight="52.0" prefWidth="151.0" text="Exit" />
+      <Button fx:id="exitButton" layoutX="348.0" layoutY="455.0" onMouseClicked="#exitClicked" prefHeight="52.0" prefWidth="151.0" style="-fx-background-color: #F5F6CE; -fx-border-color: #F3F781;" text="EXIT" textFill="#e5750e">
+         <font>
+            <Font name="Leelawadee Bold" size="14.0" />
+         </font></Button>
       
-      <ListView fx:id="listView" layoutX="28.0" layoutY="22.0" onKeyPressed="#listViewClicked" onMouseClicked="#listViewClicked" prefHeight="393.0" prefWidth="527.0" />
+      <ListView fx:id="listView" layoutX="15.0" layoutY="15.0" onKeyPressed="#listViewClicked" onMouseClicked="#listViewClicked" prefHeight="492.0" prefWidth="323.0" style="-fx-border-color: #58D3F7;" />
 
    </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
 
 </Pane>
